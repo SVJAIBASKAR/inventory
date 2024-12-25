@@ -1,0 +1,7 @@
+prod_name,prod_id,prod_rate,prod_mrp,prod_stock,batch_id
+a,1,10,15,10,z1
+b,2,10,15,10,z2
+c,3,10,15,10,z3
+d,4,10,15,10,z4
+e,5,10,15,10,z5
+f,6,10,15,10,z6
