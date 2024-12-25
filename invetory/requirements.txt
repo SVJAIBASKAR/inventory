@@ -6,6 +6,6 @@ XlsxWriter
 matplotlib
 bcrypt
 datetime
-yaml
+PyYAML>=6.0
 
 
