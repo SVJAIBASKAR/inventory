@@ -23,7 +23,7 @@ def bulk_upload():
 
                 # Read the existing CSV
                 try:
-                    prod_df = pd.read_csv("C:\\Users\\dell\\vj\\invetory\\bill.csv")
+                    prod_df = pd.read_csv("data\\bill.csv")
                 except FileNotFoundError:
                     st.warning("Existing bill file not found. Creating a new one.")
                     prod_df = pd.DataFrame(columns=["prod_name", "prod_id", "batch_id", "prod_rate", "prod_mrp", "prod_stock", "date"])
@@ -50,5 +50,5 @@ def bulk_upload():
 
             except Exception as e:
                 st.error(f"An error occurred: {e}")
-            
+
 bulk_upload()
