@@ -18,6 +18,7 @@ if "form_data" not in st.session_state:
     }
 if 'save_clicked' not in st.session_state:
     st.session_state.save_clicked = False
+
 # Dashboard page
 def dashboard_page():
     st.title("Dashboard")
@@ -93,7 +94,7 @@ def single_product_page():
 
 # Entry function to save product data
 def entry(prod_name, prod_id, prod_rate, prod_mrp, prod_stock, batch_id):
-    file_path = "C:\\Users\\dell\\vj\\invetory\\bill.csv"
+    file_path = "data\\bill.csv"
     try:
         prod_df = pd.read_csv(file_path)
     except FileNotFoundError:
